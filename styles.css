@@ -141,12 +141,14 @@ h3 {
 }
 .project-list .vector1 {
   position: absolute;
+  right: 0;
   inset-inline-end: 0;
   z-index: -1;
 }
 .project-list .vector2 {
   position: absolute;
   z-index: -1;
+  right: 0;
   inset-inline-end: 0;
   inset-block-end: -200em;
 }
