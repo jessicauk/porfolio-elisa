@@ -1,0 +1,373 @@
+:root {
+  --primary: #42e2b8;
+  --black: #000;
+  --gradient: linear-gradient(135deg, #fad8a1 0%, #e96d71 100%);
+}
+body {
+  font-family: "Oxygen", sans-serif;
+  background: var(--gradient);
+  margin: 0;
+}
+.u-wrapper {
+  max-inline-size: 1232px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+h1 {
+  font-family: Oxygen;
+  font-size: 59px;
+  line-height: 95px;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+h3 {
+  font-size: 48px;
+  line-height: 77px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social-item {
+  background: var(--primary);
+  display: inline-block;
+  inline-size: 44px;
+  block-size: 44px;
+  text-align: center;
+  line-height: 44px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 2px solid var(--black);
+}
+.social-item + .social-item{
+  margin-left: 1em;
+}
+/* .social-item img {
+  vertical-align: middle;
+} */
+.btn {
+  border-radius: 90px;
+  letter-spacing: 1.25px;
+  background: initial;
+  block-size: 50px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 50px;
+  border: 2px solid var(--black);
+  font-weight: bold;
+  padding: 0 1.5em;
+}
+.btn.full {
+  width: 100%;
+}
+.btn.primary {
+  background: var(--primary);
+}
+.btn.secondary img {
+  position: relative;
+  bottom: -4px;
+}
+.btn i {
+  display: inline-block;
+}
+.btn span {
+  vertical-align: middle;
+}
+.btn i img {
+  vertical-align: b;
+}
+.comment-content i {
+  display: block;
+  text-align: center;
+}
+.hero-content img {
+  display: block;
+  margin: 0 auto;
+}
+.hero .ellipse1 {
+  position: absolute;
+  z-index: -1;
+}
+.header {
+  padding: 1em 0;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3em
+}
+.header-content img {
+  object-fit: contain;
+}
+.comment {
+  text-align: center;
+}
+.comment .ellipse2{
+  position: absolute;
+  inset-block-start: 25em;
+  inset-inline-start: 33em;
+  z-index: -1;
+  inline-size: 22em;
+  block-size: 22em;
+  -webkit-filter: blur(17px);
+  filter: blur(17px);
+}
+.comment-content {
+  font-weight: bold;
+  text-align: ceter;
+}
+.comment-content p {
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 38px;
+  letter-spacing: 0.5%;
+}
+.comment-content p + p {
+  font-weight: bold;
+  line-height: 38px;
+  text-align: center;
+  font-size: 24px;
+}
+.project {
+  display: grid;
+  grid-template-areas: 'image' 'description';
+}
+.project-list .vector1 {
+  position: absolute;
+  inset-inline-end: 0;
+  z-index: -1;
+}
+.project-list .vector2 {
+  position: absolute;
+  z-index: -1;
+  inset-inline-end: 0;
+  inset-block-end: -200em;
+}
+.project .ellipse4 {
+  position: absolute;
+  z-index: -1;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+}
+.project-image {
+  grid-area: image;
+  text-align: center;
+  margin-block: 1.5em;
+}
+.project-description {
+  grid-area: description;
+}
+.project img {
+  max-width: 100%;
+}
+.tag {
+  background: var(--black);
+  color: var(--primary);
+  display: inline-block;
+  padding: 0.5em;
+  box-shadow: -4px 4px 0 white;
+}
+.project-copy {
+  line-height: 25px;
+  letter-spacing: .5%;
+  margin-block: 1.5em;
+}
+.project-cta {
+  margin-block-start: 1.5em;
+}
+.project-cta .ellipse3 {
+  position: absolute;
+  z-index: -1;
+  inset-inline-start: 20em;
+  -webkit-filter: blur(14px);
+  filter: blur(14px);
+}
+.project-cta button + button {
+  margin-block-start: 1em;
+}
+.testimony {
+  margin: 0;
+  padding: 1.5em;
+  border-radius: 1.5em;
+  backdrop-filter: blur(39.7657px);
+  background: rgba(255, 255, 255, 0.2);
+  border: 3.98px solid rgba(255, 255, 255, 0.2);
+
+}
+.testimony-image {
+  text-align: center;
+}
+.testimony-copy {
+  line-height: 20px;
+  font-weight: bold;
+}
+.testimony-title {
+  font-size: 12px;
+  color: rgba(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 20px;
+}
+.project,
+.testimony {
+  margin-block: 2.5em;
+}
+.contact .ellipse5 {
+  position: absolute;
+  z-index: -1;
+  -webkit-filter: blur(27px);
+  filter: blur(27px);
+  inset-inline-start: -10em;
+}
+.contact-description {
+  max-inline-size: 543px;
+  margin: auto;
+  padding-inline: .5em;
+  text-align: center;
+}
+.contact-description h2 span{
+    display: inline-block;
+    width: auto;
+}
+.form {
+  max-inline-size: 543px;
+  margin: auto;
+}
+.form .tag {
+  display: block;
+  text-align: center;
+  inline-size: auto;
+  padding: 0;
+}
+#emailanchor {
+  display: none;
+}
+.form textarea{
+  margin-block-end: 2em;
+}
+.form label {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: .5em;
+  padding-inline-start: .5em;
+}
+.form input, textarea {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: .5em;
+  border: 1px solid #858C94;
+  padding: .8em;
+}
+.form label span {
+  color: #DA1414;
+}
+input::-webkit-input-placeholder{
+  color: #858C94;
+}
+.contact {
+  margin-block-end: 5em;
+}
+.footer {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .logo {
+  margin-block-end: 1.5em;
+}
+.footer .footer-text {
+  padding: 0;
+}
+.footer-message {
+  text-align: center;
+}
+.footer-copyright {
+  letter-spacing: 0.5%;
+  font-weight: 400;
+  text-align: center;
+  line-height: 25px;
+  font-size: 16px;
+}
+@media screen and (min-width:768px) {
+  .header-content button {
+    inline-size: 20%;
+  }
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "description image";
+  }
+  .hero-image {
+    grid-area: image;
+  }
+  .hero-description {
+    grid-area: description;
+  }
+  .hero-image img{
+    inline-size: 567px;
+    margin-top: -50px;
+  }
+  .social {
+    display: inherit;
+  }
+  .comment-content {
+    max-inline-size: 900px;
+    margin: auto;
+  }
+  .project {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "description image";
+    grid-column-gap: 3em;
+  }
+  .project-cta {
+    display: flex;
+    align-items: center;
+    gap: 1em
+  }
+  .project-cta button + button{
+    margin: 0;
+  }
+  .testimony {
+    max-inline-size: 900px;
+    margin: auto;
+    padding: 5em;
+    text-align: center;
+  }
+  .testimony-copy {
+    font-size: 2.2em;
+    line-height: 55px;
+  }
+  .testimony-title {
+    font-size: 1.5px;
+  }
+  .project, .testimony {
+    margin-block: 5em;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer .logo {
+    order: 0;
+    margin: 0;
+  }
+  .footer .text {
+    order: 1;
+    display: inherit;
+    padding-inline-start: 6em;
+  }
+  .footer .social{
+    order: 3;
+  }
+  .text .footer-message + .footer-copyright {
+    display: inline;
+  }
+}
